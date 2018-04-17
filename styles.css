@@ -24,14 +24,30 @@ input {
 	width: 200px;
 	margin-bottom: 50px;
 }
+
 img {
-	margin: 15px;
-	float: left;
+	margin: 15px;	
 	border-radius: 50%;
-
+	object-fit: cover;
 }
+
 a {
-	float: left;
+	color: white;
+	text-decoration: none;
 }
 
+a:hover {
+	color: black;
+}
 
+.users {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.user {
+	flex: 1;
+	text-align: center;
+}

@@ -91,7 +91,7 @@ var UsersList = function (_React$Component2) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "users" },
         this.users
       );
     }
@@ -121,12 +121,16 @@ var User = function (_React$Component3) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
-        React.createElement("img", { src: this.props.user.avatar_url, style: { maxWidth: '100px' } }),
+        { className: "user" },
+        React.createElement("img", { src: this.props.user.avatar_url, style: { width: '150px' } }),
         React.createElement(
-          "a",
-          { href: this.props.user.html_url, target: "_blank" },
-          this.props.user.login
+          "p",
+          null,
+          React.createElement(
+            "a",
+            { href: this.props.user.html_url, target: "_blank" },
+            this.props.user.login
+          )
         )
       );
     }
